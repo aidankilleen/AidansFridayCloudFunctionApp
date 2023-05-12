@@ -7,7 +7,7 @@ module.exports = async function (context, req) {
     let responseMessage = "Enter a name";
 
     if (name) {
-        figlet(name, (err, data)=> {
+        figlet(`Hello ${name}`, (err, data)=> {
             if (err) {
                 responseMessage = "error";
             } else {
